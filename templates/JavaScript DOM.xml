@@ -1,0 +1,15 @@
+<templateSet group="JavaScript DOM">
+  <template name="addEvent" value="document.getElementById('$ELEMENT_ID$').addEventListener('$EVENT_NAME$', function(e) {&#10;  $END$&#10;});" description="registers event listener for element by ID" toReformat="true" toShortenFQNames="true">
+    <variable name="ELEMENT_ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EVENT_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="elid" value="document.getElementById($END$);" description="getElementById" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+    </context>
+  </template>
+</templateSet>

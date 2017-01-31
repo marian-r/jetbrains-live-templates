@@ -1,0 +1,27 @@
+<templateSet group="Mocha">
+  <template name="desc" value="describe('$DESCRIPTION$', () =&gt; {&#10;  $END$&#10;}); " description="describe block" toReformat="true" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="it" value="it('$DESCRIPTION$', ($ASYNC$) =&gt; {&#10;  $END$&#10;});" description="test case" toReformat="true" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ASYNC" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="befe" value="beforeEach(($ASYNC$) =&gt; {&#10;  $END$&#10;});" description="beforeEach" toReformat="true" toShortenFQNames="true">
+    <variable name="ASYNC" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="afte" value="afterEach(($ASYNC$) =&gt; {&#10;  $END$&#10;});" description="afterEach" toReformat="true" toShortenFQNames="true">
+    <variable name="ASYNC" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>
